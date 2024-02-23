@@ -19,4 +19,10 @@
     <%= restaurant.category %>
   </p>
 
+<p><strong>reviews:</strong>
+<% restaurant.reviews.each do |review|%>
+      <%= review.content %>
+      <%= review.rating %>
+    <% end%></p>
+
 </div>
